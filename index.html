@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Checkout-SHOP</title>
+    <link rel="stylesheet" href="./globalStyles.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <a><img class="home-menu" src="./img/menu.png" alt="home-menu" /></a>
+        <div class="title">Shop</div>
+        <a><img src="./img/grocery-store.png" alt="cart" /></a>
+      </div>
+    </header>
+
+    <section class="checkout">
+        <div class="checkout-headline">Checkout</div>
+        <div class="checkout-info">
+           Shop is a demo app-form data will not be sent
+        </div>
+    </section>
+
+    <section>
+      <div class="form-container">
+        <form class="checkout-form">
+          <div class="account-info">
+              <p class="headl">Account Information</p>
+ 
+              <div class="input-box">
+                  <input type="text" name="email" class="input-field" required>
+                  <label for="email" class="input-label">Email</label>
+              </div>
+              <div class="input-box">
+                  <input type="text" id="phone-number" class="input-field" required>
+                  <label for="phone-number" class="input-label">Phone Number</label>
+              </div>
+
+              <p class="headl">Shipping Address</p>
+              <div class="input-box">
+                   <input type="text" name="address" class="input-field" required>
+                   <label for="address" class="input-label">Address</label>
+              </div>
+              <div class="input-box">
+                   <input type="text" name="city" class="input-field" required>
+                   <label for="city" class="input-label">City</label>
+              </div>
+            
+            <div class="state-zip">
+              <div class="input-box">
+                  <input type="text" name="state/province" class="input-field" required>
+                  <label for="state/province" class="input-label">State/province</label>
+              </div>
+              <div class="input-box">
+                   <input type="text" name="zip/postal" class="input-field" required>
+                   <label for="zip/postal" class="input-label">Zip/Postal</label>
+              </div>
+            </div>
+           
+            <p class="items">Country</p>
+            <select class="dropdown">
+              <option value="option1">United States</option>
+              <option value="option2">Canada</option>
+            </select>
+            
+            
+            <p class="headl">Billing Address</p>
+            <input type="checkbox" id="billing" /> 
+            <label for="billing"></label>
+            <p class="billing-line">Use different billing address</p> 
+        
+            <div class="diff-address">
+                <div class="input-box">
+                   <input type="text" name="address" class="input-field" required>
+                   <label for="address" class="input-label">Address</label>
+                </div>
+             
+                <div class="input-box">
+                    <input type="text" name="city" class="input-field" required>
+                    <label for="city" class="input-label">City</label>
+                </div>
+
+
+                <div class="state-zip">
+                  <div class="input-box">
+                      <input type="text" name="state/province" class="input-field" required>
+                      <label for="state/province" class="input-label">State/Province</label>
+                  </div>
+                  <div class="input-box">
+                       <input type="text" name="zip/postal" class="input-field" required>
+                       <label for="zip/postal" class="input-label">Zip/Postal</label>
+                  </div>
+                </div>
+         
+                <p class="items">Country</p>
+                <select class="dropdown">
+                     <option value="option1">United States</option>
+                     <option value="option2">Canada</option>
+                </select>  
+
+            </div>
+        </div>
+          
+
+          <div class="payment-info">
+               <p class="headl">Payment Method</p>
+               <div class="input-box">
+                   <input type="text" name="cardholder" class="input-field" required>
+                   <label for="cardholder" class="input-label">Cardholder Name</label>
+               </div>
+               <div class="input-box">
+                   <input type="text" name="cardnumber" class="input-field" required>
+                   <label for="cardnumber" class="input-label">Card Number</label>
+               </div>
+               <p class="headl">Expiry</p>
+               <div class="expiry">
+                  <select id="dropdown-month">
+                      <option value="option1">Jan</option>
+                      <option value="option2">Feb</option>
+                      <option value="option3">Mar</option>
+                      <option value="option4">Apr</option>
+                      <option value="option5">May</option>
+                      <option value="option6">Jun</option>
+                      <option value="option7">Jul</option>
+                      <option value="option8">Aug</option>
+                      <option value="option9">Sep</option>
+                      <option value="option10">Oct</option>
+                      <option value="option11">Nov</option>
+                      <option value="option12">Dec</option>
+                  </select>
+            
+                  <select id="dropdown-year">
+                      <option value="option1">2016</option>
+                      <option value="option2">2017</option>
+                      <option value="option3">2018</option>
+                      <option value="option4">2019</option>
+                      <option value="option5">2020</option>
+                      <option value="option6">2021</option>
+                      <option value="option7">2022</option>
+                      <option value="option8">2023</option>
+                      <option value="option9">2024</option>
+                      <option value="option10">2025</option>
+                      <option value="option11">2026</option>
+                  </select>
+              
+                  <div class="input-box" id="cvv">
+                     <input type="text" name="cvv"  class="input-field" required>
+                     <label for="cvv" class="input-label">CVV</label>
+                  </div>
+
+            </div>
+
+             <p class="headl">Order Summary</p>
+             <div class="order-sum">
+                <div>
+                  <p class="items">Anvil US CREW Neck-Grey</p>
+                  <p class="items">$110.75</p>
+                </div>
+                <div>
+                   <p class="items">Total</p>
+                   <p class="items">$110.75</p>
+                </div>
+              </div>
+
+             <input id="submit-btn" type="submit" value="PLACE ORDER" />
+           </div>
+         </div>
+      </form>
+   </section>
+
+  <footer>
+      <p>Made by polymer</p>
+      <button>Demo only</button>
+  </footer>
+  </body>
+</html>
