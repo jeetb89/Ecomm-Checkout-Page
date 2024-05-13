@@ -1,0 +1,295 @@
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-grey: grey;
+  --color-silver: silver;
+  --color-primary: #172c50;
+}
+
+body {
+  font-family: Roboto, Noto, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 4%;
+}
+
+.title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin-left: 2%;
+}
+
+.checkout {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 3% 0% 0%;  
+}
+
+.checkout-info {
+  font-size: 0.8rem;
+  color: var(--color-grey);
+}
+
+.checkout-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.container img {
+  max-width: 25px;
+  min-width: 25px;
+}
+
+.account-info,
+.payment-info {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0% 5% 5% 5%;
+  margin-bottom: 5%;
+  position:relative;
+}
+
+.payment-info{
+  margin-bottom:20%
+}
+.headl{
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.payment-info h4 {
+    margin: 7% 0%;
+}
+
+
+#billing {
+  width: 7%;
+  height: 2%;
+  
+}
+
+.diff-address {
+  display: none;
+}
+
+.items{
+    font-size:small;
+}
+
+#billing:checked ~ .diff-address{
+  display:block;
+}
+
+.billing-line{
+  display:inline
+}
+
+.dropdown {
+  width: -webkit-fill-available;
+  font-size: 1rem;
+  border: none;
+  background-color: white;
+  border-bottom: 2px solid var(--color-silver);
+}
+
+.dropdown:focus{
+  outline:none;
+  border-bottom:2px solid   var(--color-primary);
+}
+
+.order-sum {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.order-sum div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expiry {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#cvv {
+  width: 32%;
+  margin: 0%;
+}
+
+#cvv label{
+top:-2%;
+}
+.expiry select {
+  width: 32%;
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 1px solid var(--color-silver);
+  background-color: white;
+}
+
+#submit-btn {
+  width: 100vw;
+  left: 0%;
+  position: fixed;
+  background-color: var(--color-primary);
+  color: white;
+  height: 9%;
+  bottom: -1%;
+  margin: 0%;
+}
+
+.state-zip {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8%;
+}
+
+.state-zip input {
+    width: 98%;
+ 
+}
+
+.state-zip .input-box{
+  width:49%;
+  margin:0%;
+}
+
+.state-zip label{
+ top:-25%;
+}
+
+footer{
+    display:none;
+}
+
+
+.bill-box{
+    display: flex;
+ }
+
+.bill-box p{
+    align-self: center;
+}
+
+
+.input-box{
+  position:relative;
+  margin:15% 0%;
+}
+
+
+.input-field{
+       width:100%;
+       height:3vh;
+       margin-top:3%;
+       border:none;
+       border-bottom:2px solid #dbdbdb;;        
+}
+
+.input-label{
+ position:absolute;
+ top:0%;
+ font-size:1.1rem;
+ color:var(--color-grey);
+ left:0%;
+ font-weight:300;
+}
+
+.input-field:focus~ .input-label,
+.input-field:valid~ .input-label{
+  transform:translateY(-3vh);
+  font-size:0.8rem;
+  color:black;
+  transition-property: 0.3s border-bottom;
+}
+
+.input-field:valid,
+.input-field:focus{
+  outline:none;
+  border:0;
+  border-bottom: 2px  solid var(--color-primary);
+  transition-property: border-bottom; 
+  transition-duration: 0.3s; 
+}
+
+#dropdown-month:focus,
+#dropdown-year:focus{
+  outline:none;
+  border:0;
+  border-bottom: 2px  solid var(--color-primary);
+  cursor:pointer;
+}
+
+
+@media screen and (min-width: 767px) {
+
+  .container{
+    padding:2% 2%;
+  }
+   .checkout{
+    margin:5%;
+   }  
+  .form-container{
+        display: flex;
+        justify-content: center;
+    }
+  .checkout-form{
+         min-width: 80vw;
+  }
+    .home-menu {
+    display: none;
+  }
+
+  .account-info,
+  .payment-info {
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  .headl {
+    margin-top: 10%;
+    font-weight: bold;
+  }
+
+
+  #submit-btn {
+    width: 50%;
+    border: 2px solid black;
+    background-color: white;
+    position: relative;
+    color: black;
+    height:5%;
+    margin-top:6%;
+  }
+
+  .order-sum {
+    margin-bottom: 0%;
+  }
+   
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer > button{
+    background-color: black;
+    color:aliceblue;
+    width:10vw;
+  }
+}
