@@ -74,8 +74,6 @@ body {
 
 #billing {
   width: 7%;
-  height: 2%;
-  
 }
 
 .diff-address {
@@ -133,6 +131,7 @@ body {
 #cvv label{
 top:-2%;
 }
+
 .expiry select {
   width: 32%;
   font-size: 1.1rem;
@@ -276,7 +275,7 @@ footer{
     margin-top:6%;
   }
 
-  
+
   .order-sum {
     margin-bottom: 0%;
   }
